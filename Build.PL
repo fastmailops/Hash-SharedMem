@@ -11,7 +11,7 @@ Module::Build->subclass(code => q{
 	sub compile_xs {
 		my($self, $file, %args) = @_;
 		require ExtUtils::ParseXS;
-		ExtUtils::ParseXS->VERSION(3.30);
+		ExtUtils::ParseXS->VERSION(3.24);
 		return $self->SUPER::compile_xs($file, %args);
 	}
 	sub probed_info {
@@ -113,7 +113,7 @@ Module::Build->subclass(code => q{
 		"Data::Dumper" => 0,
 		"Errno" => "1.00",
 		"ExtUtils::CBuilder" => "0.15",
-		"ExtUtils::ParseXS" => "3.30",
+		"ExtUtils::ParseXS" => "3.24",
 		"File::Temp" => "0.22",
 		"IO::File" => 0,
 		"Module::Build" => 0,
